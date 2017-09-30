@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6705C9161F78E6B300788878 /* training_data_bin in Resources */ = {isa = PBXBuildFile; fileRef = 6705C9141F78E63100788878 /* training_data_bin */; };
+		6705C91D1F7A50CF00788878 /* test_data_bin in Resources */ = {isa = PBXBuildFile; fileRef = 6705C91C1F7A50C300788878 /* test_data_bin */; };
+		6705C9211F7B413800788878 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6705C9201F7B413700788878 /* DrawView.swift */; };
+		6705C9231F7FA69F00788878 /* MPSconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6705C9221F7FA68700788878 /* MPSconfig */; };
 		6726F4551F73F7B600A4C792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726F4541F73F7B600A4C792 /* AppDelegate.swift */; };
 		6726F4571F73F7B600A4C792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726F4561F73F7B600A4C792 /* ViewController.swift */; };
 		6726F45A1F73F7B600A4C792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6726F4581F73F7B600A4C792 /* Main.storyboard */; };
@@ -14,6 +18,8 @@
 		6726F45F1F73F7B600A4C792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6726F45D1F73F7B600A4C792 /* LaunchScreen.storyboard */; };
 		6726F46A1F73F7B600A4C792 /* MPSWithMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726F4691F73F7B600A4C792 /* MPSWithMetalTests.swift */; };
 		6726F4751F73F7B600A4C792 /* MPSWithMetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726F4741F73F7B600A4C792 /* MPSWithMetalUITests.swift */; };
+		6726F4831F73F7CD00A4C792 /* TensorOps.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6726F4821F73F7CD00A4C792 /* TensorOps.metal */; };
+		679CE8C61F7676D900A7AA7E /* MPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679CE8C51F7676D900A7AA7E /* MPS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6705C9141F78E63100788878 /* training_data_bin */ = {isa = PBXFileReference; lastKnownFileType = file; path = training_data_bin; sourceTree = "<group>"; };
+		6705C91C1F7A50C300788878 /* test_data_bin */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_data_bin; path = "../../MPS-MNIST/trmps/MNISTDatasource/test_data_bin"; sourceTree = "<group>"; };
+		6705C9201F7B413700788878 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		6705C9221F7FA68700788878 /* MPSconfig */ = {isa = PBXFileReference; lastKnownFileType = file; name = MPSconfig; path = "../../MPS-MNIST/trmps/MPSconfig"; sourceTree = "<group>"; };
 		6726F4511F73F7B600A4C792 /* MPSWithMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPSWithMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6726F4541F73F7B600A4C792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6726F4561F73F7B600A4C792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		6726F4701F73F7B600A4C792 /* MPSWithMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPSWithMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6726F4741F73F7B600A4C792 /* MPSWithMetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSWithMetalUITests.swift; sourceTree = "<group>"; };
 		6726F4761F73F7B600A4C792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6726F4821F73F7CD00A4C792 /* TensorOps.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TensorOps.metal; sourceTree = "<group>"; };
+		679CE8C51F7676D900A7AA7E /* MPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				6726F4541F73F7B600A4C792 /* AppDelegate.swift */,
+				6726F4821F73F7CD00A4C792 /* TensorOps.metal */,
+				6705C9221F7FA68700788878 /* MPSconfig */,
+				6705C9141F78E63100788878 /* training_data_bin */,
+				6705C91C1F7A50C300788878 /* test_data_bin */,
 				6726F4561F73F7B600A4C792 /* ViewController.swift */,
+				6705C9201F7B413700788878 /* DrawView.swift */,
+				679CE8C51F7676D900A7AA7E /* MPS.swift */,
 				6726F4581F73F7B600A4C792 /* Main.storyboard */,
 				6726F45B1F73F7B600A4C792 /* Assets.xcassets */,
 				6726F45D1F73F7B600A4C792 /* LaunchScreen.storyboard */,
@@ -230,6 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6726F45F1F73F7B600A4C792 /* LaunchScreen.storyboard in Resources */,
+				6705C91D1F7A50CF00788878 /* test_data_bin in Resources */,
+				6705C9231F7FA69F00788878 /* MPSconfig in Resources */,
+				6705C9161F78E6B300788878 /* training_data_bin in Resources */,
 				6726F45C1F73F7B600A4C792 /* Assets.xcassets in Resources */,
 				6726F45A1F73F7B600A4C792 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679CE8C61F7676D900A7AA7E /* MPS.swift in Sources */,
+				6705C9211F7B413800788878 /* DrawView.swift in Sources */,
+				6726F4831F73F7CD00A4C792 /* TensorOps.metal in Sources */,
 				6726F4571F73F7B600A4C792 /* ViewController.swift in Sources */,
 				6726F4551F73F7B600A4C792 /* AppDelegate.swift in Sources */,
 			);
@@ -423,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KZDMSZY72Y;
 				INFOPLIST_FILE = MPSWithMetal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = titaniumapps.MPSWithMetal;
@@ -436,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KZDMSZY72Y;
 				INFOPLIST_FILE = MPSWithMetal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = titaniumapps.MPSWithMetal;

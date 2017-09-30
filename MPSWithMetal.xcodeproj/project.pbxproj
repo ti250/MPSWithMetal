@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6705C9161F78E6B300788878 /* training_data_bin in Resources */ = {isa = PBXBuildFile; fileRef = 6705C9141F78E63100788878 /* training_data_bin */; };
-		6705C91D1F7A50CF00788878 /* test_data_bin in Resources */ = {isa = PBXBuildFile; fileRef = 6705C91C1F7A50C300788878 /* test_data_bin */; };
 		6705C9211F7B413800788878 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6705C9201F7B413700788878 /* DrawView.swift */; };
 		6705C9231F7FA69F00788878 /* MPSconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6705C9221F7FA68700788878 /* MPSconfig */; };
 		6726F4551F73F7B600A4C792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726F4541F73F7B600A4C792 /* AppDelegate.swift */; };
@@ -40,8 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6705C9141F78E63100788878 /* training_data_bin */ = {isa = PBXFileReference; lastKnownFileType = file; path = training_data_bin; sourceTree = "<group>"; };
-		6705C91C1F7A50C300788878 /* test_data_bin */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_data_bin; path = "../../MPS-MNIST/trmps/MNISTDatasource/test_data_bin"; sourceTree = "<group>"; };
 		6705C9201F7B413700788878 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		6705C9221F7FA68700788878 /* MPSconfig */ = {isa = PBXFileReference; lastKnownFileType = file; name = MPSconfig; path = "../../MPS-MNIST/trmps/MPSconfig"; sourceTree = "<group>"; };
 		6726F4511F73F7B600A4C792 /* MPSWithMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPSWithMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,8 +108,6 @@
 				6726F4541F73F7B600A4C792 /* AppDelegate.swift */,
 				6726F4821F73F7CD00A4C792 /* TensorOps.metal */,
 				6705C9221F7FA68700788878 /* MPSconfig */,
-				6705C9141F78E63100788878 /* training_data_bin */,
-				6705C91C1F7A50C300788878 /* test_data_bin */,
 				6726F4561F73F7B600A4C792 /* ViewController.swift */,
 				6705C9201F7B413700788878 /* DrawView.swift */,
 				679CE8C51F7676D900A7AA7E /* MPS.swift */,
@@ -248,9 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6726F45F1F73F7B600A4C792 /* LaunchScreen.storyboard in Resources */,
-				6705C91D1F7A50CF00788878 /* test_data_bin in Resources */,
 				6705C9231F7FA69F00788878 /* MPSconfig in Resources */,
-				6705C9161F78E6B300788878 /* training_data_bin in Resources */,
 				6726F45C1F73F7B600A4C792 /* Assets.xcassets in Resources */,
 				6726F45A1F73F7B600A4C792 /* Main.storyboard in Resources */,
 			);

@@ -160,17 +160,17 @@ class ViewController: UIViewController {
         textureDescriptor.pixelFormat = .r32Float
         textureDescriptor.usage = .shaderRead
         
-        var path = Bundle.main.path(forResource: "MPSconfig", ofType: nil)
+        let path = Bundle.main.path(forResource: "MPSconfig", ofType: nil)
         let mpsBinaryData = NSData(contentsOfFile: path!)!
         self.mps = MPS(withData: mpsBinaryData)
 
-        path = Bundle.main.path(forResource: "test_data_bin", ofType: nil)
-        let binaryData = NSData(contentsOfFile: path!)!
-        let mpsData = MPSData(withData: binaryData)
-        print("Loaded")
-        let prediction = mps.predict(forData: mpsData)
-        print(prediction)
-        print("done")
+//        path = Bundle.main.path(forResource: "test_data_bin", ofType: nil)
+//        let binaryData = NSData(contentsOfFile: path!)!
+//        let mpsData = MPSData(withData: binaryData)
+//        print("Loaded")
+//        let prediction = mps.predict(forData: mpsData)
+//        print(prediction)
+//        print("done")
     }
     
     override func didReceiveMemoryWarning() {
